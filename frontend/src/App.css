@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilo para los contenedores de grupo de formulario */
+.form-group {
+  margin-bottom: 10px;
+  position: relative; /* Añadimos posición relativa al contenedor */
+}
+
+/* Estilo para el campo de contraseña */
+.form-group input[type="password"] {
+  padding-right: 30px; /* Añadimos un relleno a la derecha para el botón */
+}
+
+/* Estilo para el botón de mostrar/ocultar contraseña */
+.toggle-password-button {
+  position: absolute; /* Hacemos que el botón sea absoluto */
+  top: 50%; /* Lo centramos verticalmente */
+  right: 5px; /* Lo alineamos a la derecha */
+  transform: translateY(-50%); /* Ajustamos la posición vertical */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Quitamos el borde */
+  cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+}
+
