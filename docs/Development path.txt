@@ -1,0 +1,5 @@
+1. Download node.js -> https://nodejs.org/en
+2. Fix Error VSC from the path and commands node with -> https://www.solvetic.com/tutoriales/article/12465-instalar-node-js-en-visual-studio-code/
+3. Fix Error VSC commands npm in CMD -> npm install -g npm@latest
+4. Install in the folder -> npm create-react-app .
+5. 
