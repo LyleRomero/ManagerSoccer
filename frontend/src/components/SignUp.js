@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+/*import firebase from 'firebase/app';
+import 'firebase/auth';*/
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -61,6 +64,7 @@ function SignUp() {
             </button>    
         </div>
         <button type="submit">Registrarse</button>
+        <p>¿Ya tienes una cuenta? <Link to="/loginup">Ingresa</Link></p>
       </form>
     </div>
   );
