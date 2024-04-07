@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 
 function LoginUp() {
   const [formData, setFormData] = useState({
@@ -28,6 +30,9 @@ function LoginUp() {
 
   return (
     <div>
+      <h1>Soccer Manager
+        <FontAwesomeIcon icon={faFutbol} style={{ marginLeft: '5px' }} />
+      </h1>
       <h2>Iniciar Sesión</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -52,7 +57,7 @@ function LoginUp() {
           </button>
         </div>
         <button type="submit">Iniciar Sesión</button>
-        <p>¿No tienes una cuenta? <Link to="/signup">Registrarse</Link></p>
+        <p>¿No tienes una cuenta? <Link to="/SignUp">Registrarse</Link></p>
       </form>
     </div>
   );

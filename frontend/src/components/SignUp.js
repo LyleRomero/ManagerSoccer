@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 /*import firebase from 'firebase/app';
 import 'firebase/auth';*/
 
@@ -31,6 +33,9 @@ function SignUp() {
 
   return (
     <div>
+      <h1>Soccer Manager
+      <FontAwesomeIcon icon={faFutbol} style={{ marginLeft: '5px' }} />
+      </h1>
       <h2>Registro</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -64,7 +69,7 @@ function SignUp() {
             </button>    
         </div>
         <button type="submit">Registrarse</button>
-        <p>¿Ya tienes una cuenta? <Link to="/loginup">Ingresa</Link></p>
+        <p>¿Ya tienes una cuenta? <Link to="/LoginUp">Ingresa</Link></p>
       </form>
     </div>
   );
