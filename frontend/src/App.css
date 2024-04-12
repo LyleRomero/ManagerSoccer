@@ -1,65 +1,96 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-link {
+    color: #61dafb;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Estilo para los contenedores de grupo de formulario */
+  .form-group {
+    margin-bottom: 10px;
+    position: relative; /* Añadimos posición relativa al contenedor */
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Estilo para el campo de contraseña */
+  .form-group input[type="password"] {
+    padding-right: 30px; /* Añadimos un relleno a la derecha para el botón */
   }
+
+  /* Estilo para el botón de mostrar/ocultar contraseña */
+  .toggle-password-button {
+    position: absolute; /* Hacemos que el botón sea absoluto */
+    top: 50%; /* Lo centramos verticalmente */
+    right: 5px; /* Lo alineamos a la derecha */
+    transform: translateY(-50%); /* Ajustamos la posición vertical */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Quitamos el borde */
+    cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+  }
+
+ 
+
+  /*Estilo de la NavBar*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    background-color: #d3d3d3;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .dashboard-container {
+    display: flex; /* Utiliza el modelo de caja flexible para distribuir los elementos internos */
+  }
+  
+
+
+
+ /* Estilos del contenido del dashboard */
+.dashboard-content {
+  width: calc(100% - 200px); /* Ajusta el ancho para que el contenido se ajuste al lado del Sidebar */
 }
 
-/* Estilo para los contenedores de grupo de formulario */
-.form-group {
-  margin-bottom: 10px;
-  position: relative; /* Añadimos posición relativa al contenedor */
-}
 
-/* Estilo para el campo de contraseña */
-.form-group input[type="password"] {
-  padding-right: 30px; /* Añadimos un relleno a la derecha para el botón */
-}
+  /*Estilos de la barra lateral del Dashboard*/
 
-/* Estilo para el botón de mostrar/ocultar contraseña */
-.toggle-password-button {
-  position: absolute; /* Hacemos que el botón sea absoluto */
-  top: 50%; /* Lo centramos verticalmente */
-  right: 5px; /* Lo alineamos a la derecha */
-  transform: translateY(-50%); /* Ajustamos la posición vertical */
-  background-color: transparent; /* Fondo transparente */
-  border: none; /* Quitamos el borde */
-  cursor: pointer; /* Cambiamos el cursor al pasar por encima */
-}
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #e7e7e7;
+    border-right: 1px solid #ccc;
+  }
 
-.app-container {
-  margin: 0 auto; /* Centra horizontalmente */
-  text-align: center; /* Opcional: centra el texto dentro del contenedor */
-}
+  .sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar-menu li {
+    padding: 10px 20px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .sidebar-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .sidebar-menu li a:hover {
+    color: #007bff;
+  }
+
+  .sidebar-menu li.configuracion {
+    border-top: 2px solid #ccc;
+  }
+
+ 

@@ -57,7 +57,7 @@ function LoginUp() {
           </button>
         </div>
         <button type="submit">Iniciar Sesión</button>
-        <p>¿No tienes una cuenta? <Link to="/SignUp">Registrarse</Link></p>
+        <p>¿No tienes una cuenta? <Link to="/signUp">Registrarse</Link></p>
       </form>
     </div>
   );

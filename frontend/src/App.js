@@ -1,20 +1,21 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home'
 import SignUp from './components/SignUp';
 import LoginUp from './components/LoginUp';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <div className='.app-container'> 
-      <Router>
-        <Routes>
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/LoginUp" element={<LoginUp />} />
-          {/* Otras rutas */}
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginUp />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard/*" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
