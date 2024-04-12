@@ -3,11 +3,19 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div>
-      <h1>Bienvenido a la plataforma</h1>
-      <Link to="/login">Login</Link>
-      <Link to="/signup">Sign Up</Link>
-      <Link to="/dashboard">Dashboard</Link>
+    <div className="home-container">
+      <h1 className="home-title">Bienvenido a la Plataforma Web</h1>
+      <div className="button-container">
+        <div className="button-box">
+          <Link to="/login" className="home-button">Iniciar sesión</Link>
+        </div>
+        <div className="button-box">
+          <Link to="/signup" className="home-button">Registrarse</Link>
+        </div>
+        <div className="button-box">
+          <Link to="/dashboard" className="home-button">Dashboard</Link>
+        </div>
+      </div>
     </div>
   );
 }
