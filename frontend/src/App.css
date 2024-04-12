@@ -142,4 +142,19 @@
     border-top: 2px solid #ccc;
   }
 
- 
+/*Estilos botones dashboard */
+  .agregar-btn {
+    position: absolute;
+    top: 20px; /* Ajusta la posición según sea necesario */
+    right: 20px; /* Ajusta la posición según sea necesario */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .agregar-btn:hover {
+    background-color: #0056b3;
+  }
