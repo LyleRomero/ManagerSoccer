@@ -12,7 +12,9 @@ function Dashboard() {
     <div className="dashboard-container">
       <Sidebar />
       <div className='dashboard-content'>
-        <h1>Dashboard</h1>
+        <div className='dashboard-title'>
+          <h1>Dashboard</h1>
+        </div>
         <Routes>
           <Route path="inicio" element={<Inicio />} />
           <Route path="Equipos" element={<EquiposPage />} />

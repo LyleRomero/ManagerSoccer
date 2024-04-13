@@ -101,8 +101,31 @@
 }
 
 
-  /*Estilos de la barra lateral del Dashboard*/
+/* Dashboard.css */
 
+.dashboard-title {
+  border-bottom: 1px solid #ccc; /* Borde inferior gris */
+  height: 68px;
+}
+
+.dashboard-title h1 {
+  margin-bottom: 0; /* Elimina el margen inferior del título */
+}
+
+
+/*Estilo Equipos header y boton*/
+.equipos-header {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos al inicio y al final */
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 20px; /* Añade un relleno */
+  border-bottom: 1px solid #ccc; /* Línea divisoria inferior */
+}
+
+
+
+
+  /*Estilos de la barra lateral del Dashboard*/
   .sidebar {
     width: 200px;
     height: 100vh;
@@ -142,11 +165,21 @@
     border-top: 2px solid #ccc;
   }
 
+/*Estilo mformulario de agregar equipos*/
+.agregar-content {
+  padding: 20px 20px;
+  border-bottom: 1px solid #ccc; /* Línea divisoria inferior */
+}
+
+/*Estilo lista de ejemplo*/
+.equipos-lista {
+  padding: 20px;
+}
+
+
+
 /*Estilos botones dashboard */
   .agregar-btn {
-    position: absolute;
-    top: 20px; /* Ajusta la posición según sea necesario */
-    right: 20px; /* Ajusta la posición según sea necesario */
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
