@@ -191,3 +191,21 @@
   .agregar-btn:hover {
     background-color: #0056b3;
   }
+
+
+  /* Agrega estilos para la tabla */
+.equipos-lista table {
+  width: 100%;
+  border-collapse: collapse; /* Combina los bordes de las celdas */
+}
+
+.equipos-lista th, .equipos-lista td {
+  border: 1px solid #ffffff; /* Añade bordes a las celdas */
+  padding: 8px; /* Añade relleno */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.equipos-lista th {
+  background-color: #f2f2f2; /* Color de fondo para las celdas del encabezado */
+}
+

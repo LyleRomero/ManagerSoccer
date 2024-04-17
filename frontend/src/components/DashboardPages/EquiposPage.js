@@ -31,9 +31,8 @@ function EquiposPage() {
     "Equipo Fantasmitas"
   ];
 
-  const handleEditarEquipo = (index) => {
-    const equipoEditado = teams[index];
-    console.log(`Editando equipo: ${equipoEditado}`);
+  const handleEditarEquipo = (equipo) => {
+    console.log(`Editando equipo: ${equipo}`);
   };
 
   return (
@@ -49,28 +48,38 @@ function EquiposPage() {
                 <form onSubmit={handleSubmit}>
                   <label htmlFor="nombreEquipo">Nombre del Equipo:</label>
                   <input type="text" id="nombreEquipo" />
-                  <button type="submit">Aceptar</button>
+                  <button type="submit" className="agregar-btn">Aceptar</button>
                 </form>
               </div>
             )}
       </div>
       <div className='equipos-lista'>
         <h3>Lista de Equipos</h3>
-        <ul>
-          {equipos.map((equipo, index) => (
-            <li key={index}>{equipo}</li>
-          ))}
-        </ul>
-      </div>
-      <div className='equipos-lista'>
-        <ul>
-            {teams.map((teams, index) => (
-              <li key={index}>
-                {teams}
-                <button onClick={() => handleEditarEquipo(index)}>Editar</button>
-              </li>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nombre del Equipo</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            {teams.map((equipo, index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>{equipo}</td>
+                <td><button onClick={() => handleEditarEquipo(equipo)} className="agregar-btn">Editar</button></td>
+              </tr>
             ))}
-        </ul>  
+            {equipos.map((equipo, index) => (
+              <tr key={index + teams.length}>
+                <td>{index + teams.length + 1}</td>
+                <td>{equipo}</td>
+                <td><button onClick={() => handleEditarEquipo(equipo)} className="agregar-btn">Editar</button></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
       
       {/* Aquí puedes agregar más contenido relacionado con los equipos */}
