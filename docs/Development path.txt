@@ -7,4 +7,10 @@
 7. Luego lehice  npm install react-router-dom@lates
 8. Luego lo instale en /magersoccer/frontend  npm install react-router-dom
 9. Se instala en la raiz del proyecto /managersoccer/ lasiguiente libreria npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-10.  
+
+Firebase
+10. Se instala firebase en la carpeta raiz > npm install -g firebase-tools 
+11. El Pc muestra un error para iniciar sesion con >firebase login
+12. Se ejecuta > Set-ExecutionPolicy -Scope CurrentUser
+13. Ahora si, se ejecuta >firebase login
+14. 
