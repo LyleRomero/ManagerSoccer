@@ -7,15 +7,16 @@ import LoginUp from './components/LoginUp';
 import Dashboard from './components/Dashboard';
 
 function App() {
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginUp />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/dashboard/*" element={<Dashboard />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginUp />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
+        </Routes>
+      </Router>
   );
 }
 
