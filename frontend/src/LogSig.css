@@ -4,7 +4,8 @@
 	box-sizing: border-box;
 }
 
-body {
+
+.logSig {
 	background: #f6f5f7;
 	display: flex;
 	justify-content: center;
@@ -40,7 +41,7 @@ a {
 }
 
 .LogSig-button {
-	border-radius: 10px;
+	border-radius: 20px;
 	border: 1px solid #12B468;
 	background-color: #12B468;
 	color: #FFFFFF;
@@ -68,6 +69,10 @@ a {
 .LogSig-button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
+}
+
+.LogSig-button-second {
+	margin-top: 10px;
 }
 
 form {

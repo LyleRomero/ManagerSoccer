@@ -4,8 +4,7 @@ import Sidebar from './Sidebar'
 import Inicio from './DashboardPages/Inicio';
 import EquiposPage from './DashboardPages/EquiposPage';
 import PlantillaPage from './DashboardPages/PlantillaPage'
-import { app } from './firebase/firebaseContext/firebase';
-
+import { app } from './firebase/firebaseContext/firebase'
 import '../App.css';
 
 function Dashboard() {
@@ -19,7 +18,7 @@ function Dashboard() {
       <Sidebar />
       <div className='dashboard-content'>
         <div className='dashboard-title'>
-          <h1>Dashboard</h1>
+          <h2>Dashboard</h2>
           <button onClick={cerrarSesion}>Cerrar Sesión</button>
         </div>
         <Routes>

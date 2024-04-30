@@ -301,6 +301,7 @@ const LoginUP = (props) => {
     <>
       {usuario ? (<Dashboard />) :
       (
+        <div className="logSig">
         <div class="container">  
           <div class="form-container sign-up-container">
             <form onSubmit={submitHandler} action="#">
@@ -314,7 +315,7 @@ const LoginUP = (props) => {
                 {isRegistrando ? "Regístrate" : "Inicia sesión"}{" "}
               </button>
               <div>
-                <button onClick={() => setIsRegistrando(!isRegistrando)}>
+                <button onClick={() => setIsRegistrando(!isRegistrando)} className="LogSig-button-second">
                   {isRegistrando
                     ? "¿Ya tienes cuenta? ¡Inicia sesión"
                     : "¿No tienes cuenta? ¡Regístrate gratis!"}
@@ -332,6 +333,7 @@ const LoginUP = (props) => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       )}
     </>

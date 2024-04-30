@@ -6,7 +6,7 @@ function Home() {
 
   return (
       <div className="home-container">
-        <h1 className="home-title">Bienvenido a la Plataforma Web</h1>
+        <h1 className="home-title">Bienvenido a GolMin</h1>
         <div className="button-container">
           <div className="button-box">
             <Link to="/login" className="home-button">Iniciar sesión</Link>

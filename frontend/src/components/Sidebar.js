@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../App.css"
 
 
 function Sidebar() {
@@ -7,7 +8,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>Menú</h2>
+        <h1>Menú</h1>
       </div>
       <ul className="sidebar-menu">
         <li>
