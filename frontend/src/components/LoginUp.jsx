@@ -249,7 +249,7 @@ export  default LoginUp;
 
 import React, {useEffect} from "react";
 import { app } from "./firebase/firebaseContext/firebase";
-import Dashboard from "./Dashboard";
+import Administrador from "./Administrador";
 import '../LogSig.css'
 
 const LoginUP = (props) => {
@@ -299,7 +299,7 @@ const LoginUP = (props) => {
 
   return (
     <>
-      {usuario ? (<Dashboard />) :
+      {usuario ? (<Administrador />) :
       (
         <div className="logSig">
         <div class="container">  

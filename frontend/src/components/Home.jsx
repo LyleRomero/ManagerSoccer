@@ -5,37 +5,25 @@ import { Link } from 'react-router-dom';
 function Home() {
 
   return (
-      <div className="home-container">
-        <h1 className="home-title">Bienvenido a GolMin</h1>
-        <div className="button-container">
-          <div className="button-box">
-            <Link to="/login" className="home-button">Iniciar sesión</Link>
-          </div>
-          <div className="button-box">
-            <Link to="/signup" className="home-button">Registrarse</Link>
-          </div>
-          <div className="button-box">
-            <Link to="/dashboard" className="home-button">Dashboard</Link>
+    <div>
+      <div class="promotion">
+        <div class="shade"></div>
+        <div class="promo-detail cycle-overlay">
+          <div class="promo-text">
+              <span class="dash"></span>
+              <a href="#" class="copy">
+                <div class="headline">Bienvenido GolMin</div>
+                <p class="body long">Gestion de torneos nivel profesional</p>
+              </a>
+              <div class="buttons">
+                <Link to="/login" className="button" style={{ marginRight: '20px' }}>Ingresa</Link>
+                <Link to="/#" className="button" style={{ marginLeft: '20px' }}>Estadisticas</Link>
+              </div>
           </div>
         </div>
       </div>
+    </div>
   );
 }
 
 export default Home;
-
-/*
-import React from 'react'
-import { AuthProvider } from './Contexts/authContext/AuthContexts'
-
-function Home() {
-    return (
-      <AuthProvider>
-        <div>
-          <h1>HOME home HOME</h1>
-        </div>  
-      </AuthProvider>
-    )
-}
-
-export default Home;*/
