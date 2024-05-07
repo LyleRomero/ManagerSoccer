@@ -570,7 +570,7 @@ button, a {
 }
 
 .project-box {
-  --main-color-card: #dbf6fd;
+  --main-color-card: #ADD8E6;
   border-radius: 30px;
   padding: 16px;
   background-color: var(--main-color-card);
@@ -904,4 +904,72 @@ button, a {
     right: 2px;
     top: 10px;
   }
+}
+
+/*Diseño ventana emergente*/
+
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-popup p {
+  margin: 0 0 15px;
+}
+
+.form-popup h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.form-popup input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-button,
+.delete-button,
+.submit-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #ccc;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/*Diseño de ventana emergente eliminacion*/
+
+.delete-button {
+  background-color: #ff6347;
+  color: #fff;
 }
