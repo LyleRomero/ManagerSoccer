@@ -1,5 +1,9 @@
 // EquiposPage.js
 import React, { useState } from 'react';
+import { collection, addDoc, getDocs, deleteDoc } from "firebase/firestore";
+import { db } from "../firebase/firebaseContext/firebase";
+import './Dashboard.css'
+
 
 
 function EquiposPage() {
@@ -54,6 +58,7 @@ function EquiposPage() {
             )}
       </div>
       <div className='equipos-lista'>
+        <div className='group-section'>
         <h3>Lista de Equipos</h3>
         <table>
           <thead>
@@ -80,6 +85,7 @@ function EquiposPage() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
       
       {/* Aquí puedes agregar más contenido relacionado con los equipos */}

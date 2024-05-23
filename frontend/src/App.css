@@ -119,32 +119,9 @@ body {
   }
 }
 
-  /* Estilo para los contenedores de grupo de formulario */
-  .form-group {
-    margin-bottom: 10px;
-    position: relative; /* Añadimos posición relativa al contenedor */
-  }
-
-  /* Estilo para el campo de contraseña */
-  .form-group input[type="password"] {
-    padding-right: 30px; /* Añadimos un relleno a la derecha para el botón */
-  }
-
-  /*Estilo de la NavBar*/
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar {
-    background-color: #d3d3d3;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .dashboard-container {
+.dashboard-container {
     display: flex; /* Utiliza el modelo de caja flexible para distribuir los elementos internos */
-  }
+}
 
 
 
@@ -165,18 +142,6 @@ body {
 .dashboard-title h1 {
   margin-bottom: 0; /* Elimina el margen inferior del título */
 }
-
-
-/*Estilo Equipos header y boton*/
-.equipos-header {
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos al inicio y al final */
-  align-items: center; /* Alinea verticalmente los elementos */
-  padding: 20px; /* Añade un relleno */
-  border-bottom: 1px solid #ccc; /* Línea divisoria inferior */
-}
-
-
 
 
   /*Estilos de la barra lateral del Dashboard*/
@@ -221,6 +186,16 @@ body {
   .sidebar-menu li.configuracion {
     border-top: 2px solid #ccc;
   }
+
+
+/*Estilo Equipos header y boton*/
+.equipos-header {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos al inicio y al final */
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 20px; /* Añade un relleno */
+  border-bottom: 1px solid #ccc; /* Línea divisoria inferior */
+}
 
 /*Estilo mformulario de agregar equipos*/
 .agregar-content {

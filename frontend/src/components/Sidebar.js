@@ -7,18 +7,15 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-header">
-        <h1>Menú</h1>
-      </div>
       <ul className="sidebar-menu">
-        <li>
-          <Link to="/dashboard/inicio">Inicio</Link>
-        </li>
         <li>
           <Link to="/dashboard/equipos">Equipos</Link>
         </li>
         <li>
-          <Link to="/dashboard/plantilla">Plantillas</Link>
+          <Link to="/dashboard/jugadores">Jugadores</Link>
+        </li>
+        <li>
+          <Link to="/dashboard/estadisticas">Estadisticas</Link>
         </li>
       </ul>
     </div>

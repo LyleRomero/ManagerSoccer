@@ -1,34 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import NavBar from './NavBar';
 import Sidebar from './Sidebar'
-import Inicio from './DashboardPages/Inicio';
+import Jugadores from './DashboardPages/Jugadores';
 import EquiposPage from './DashboardPages/EquiposPage';
-import PlantillaPage from './DashboardPages/PlantillaPage'
-import { app } from './firebase/firebaseContext/firebase'
+import Estadisticas from './DashboardPages/Estadisticas'
 import '../App.css';
 
 function Dashboard() {
-  
-  const cerrarSesion = () => {
-    app.auth().signOut();
-  };
 
   return (
-    <div className="dashboard-container">
-      <Sidebar />
-      <div className='dashboard-content'>
-        <div className='dashboard-title'>
-          <h2>Dashboard</h2>
-          <button onClick={cerrarSesion}>Cerrar Sesión</button>
+    <div>
+      <NavBar />
+      <div className="dashboard-container">
+        <Sidebar />
+        <div className='dashboard-content'>
+          <Routes>
+            <Route path="equipos" element={<EquiposPage />} />
+            <Route path="jugadores" element={<Jugadores />} />
+            <Route path="estadisticas" element={<Estadisticas />} />
+          </Routes>
         </div>
-        <Routes>
-          <Route path="inicio" element={<Inicio />} />
-          <Route path="Equipos" element={<EquiposPage />} />
-          <Route path="plantilla" element={<PlantillaPage />} />
-        </Routes>
       </div>
     </div>
-    
   );
 }
 

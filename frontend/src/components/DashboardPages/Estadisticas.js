@@ -1,7 +1,7 @@
 // PlantillaPages.js
 import React from 'react';
 
-function PlantillaPage() {
+function Estadisticas() {
   return (
     <div>
       <p>
@@ -13,4 +13,4 @@ function PlantillaPage() {
   );
 }
 
-export default PlantillaPage;
+export default Estadisticas;
