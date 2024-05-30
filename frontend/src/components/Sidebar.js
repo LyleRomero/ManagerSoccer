@@ -9,10 +9,19 @@ function Sidebar() {
     <div className="sidebar">
       <ul className="sidebar-menu">
         <li>
+          <Link to="/dashboard/torneo">Torneo</Link>
+        </li>
+        <li>
           <Link to="/dashboard/equipos">Equipos</Link>
         </li>
         <li>
           <Link to="/dashboard/jugadores">Jugadores</Link>
+        </li>
+        <li>
+          <Link to="/dashboard/partidos">Partidos</Link>
+        </li>
+        <li>
+          <Link to="/dashboard/eliminatorias">Eliminatorias</Link>
         </li>
         <li>
           <Link to="/dashboard/estadisticas">Estadisticas</Link>
